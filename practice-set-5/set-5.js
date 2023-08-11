@@ -6,6 +6,8 @@ console.log("Your name in Lowercase:- "+lower)
 
 // 2. Extract the amount out of this string:
 // " I have Rs.2000 only"
-let str = " I have Rs.2000 only";
-let number = str.match("/%d+/")
-console.log(number)
+let str1 = " I have Rs 2000 only";
+let number2 = str1.match('/\d+/');
+let result = str.replace(/[^0-9]/g,"")
+console.log(number2)
+console.log(result)
